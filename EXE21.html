@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 21</title>
+  </head>
+  <body>
+    <h1>
+      Crie um programa que leia um número inteiro positivo e exiba todos os
+      divisores desse número usando o loop "do-while".
+    </h1>
+    <script>
+      let numero = Number(prompt("Digite um numero:"));
+      let divisor = 1;
+
+      if (numero > 0) {
+        do {
+          if (numero % divisor == 0) {
+            document.write(`${divisor}, <br>`);
+          }
+          divisor++;
+        } while (divisor <= numero);
+      }
+    </script>
+  </body>
+</html>
